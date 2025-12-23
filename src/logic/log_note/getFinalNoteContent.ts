@@ -77,5 +77,5 @@ export function getFinalNoteContent(fileContent: string, context: Context) {
 		netLineOffset += filled.lineOffset;
 	}
 
-	return finalContent.join("\n");
+	return finalContent.join("\n").replaceAll('\\n', '\n');;
 }
